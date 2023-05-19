@@ -1,0 +1,47 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+  .grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+
+  }
+
+
+  .grid-item:hover{
+    background-color: rgb(125, 217, 98);
+    }
+
+
+
+  
+  #button-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  #change-grid-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  #change-grid-button:hover {
+    background-color: #45a049;
+  }
+
